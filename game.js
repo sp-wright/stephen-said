@@ -17,11 +17,15 @@ function nextSequence() {
 
 /////////////////////////// USER INPUTS
 
-$("body").keypress(function() {
+
+function startGame(){
   if (level === 0) {
     nextSequence();
   }
-})
+}
+
+$(".start-btn").click(startGame);
+$("body").keypress(startGame);
 
 $(".btn").click(function(event) {
   var userChosenColor = event.currentTarget.id;
