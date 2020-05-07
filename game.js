@@ -18,7 +18,7 @@ function nextSequence() {
 /////////////////////////// USER INPUTS
 
 
-function startGame(){
+function startGame() {
   if (level === 0) {
     nextSequence();
   }
@@ -26,6 +26,10 @@ function startGame(){
 
 $(".start-btn").click(startGame);
 $("body").keypress(startGame);
+
+$(".start-btn").click(function() {
+  $(".start-btn").hide();
+});
 
 $(".btn").click(function(event) {
   var userChosenColor = event.currentTarget.id;
@@ -60,13 +64,14 @@ function startOver() {
   gamePattern = [];
   userClickedPattern = [];
   level = 0;
+  $(".start-btn").show();
 }
 
 /////////////////////////// EFFECTS
 
 function sounds(i) {
-      var audio = new Audio("sounds/"+i+".mp3");
-      audio.play();
+  var audio = new Audio("sounds/" + i + ".mp3");
+  audio.play();
 }
 
 function animatePress(currentColor) {
