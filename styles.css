@@ -1,153 +1,153 @@
 body {
-  text-align: center;
-  background-color: #011F3F;
-  font-family: 'Press Start 2P', cursive;
-  margin: 5%;
-  color: #FEF2BF;
+	text-align: center;
+	background-color: #011f3f;
+	font-family: 'Press Start 2P', cursive;
+	margin: 5%;
+	color: #fef2bf;
 }
 
-li{
-  margin: 1rem 0 0 0;
+li {
+	margin: 1rem 0 0 0;
 }
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+	display: block;
+	width: 50%;
+	margin: auto;
 }
-
 
 /********************************* HEADINGS *********************************/
 
 .main-heading {
-  font-size: 3rem;
+	font-size: 3rem;
+	line-height: 125%;
 }
 
 .sub-heading {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
-.rules-title{
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.rules-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }
 
-.rules-subtitle{
-  font-size: 1.5rem;
-  text-decoration: underline;
-  margin: 0 0 2.5rem 0;
+.rules-subtitle {
+	font-size: 1.5rem;
+	text-decoration: underline;
+	margin: 0 0 2.5rem 0;
 }
 
 /********************************* GAME AREA *********************************/
 
 .btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+	margin: 25px;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border: 10px solid black;
+	border-radius: 20%;
 }
 
 .red {
-  background-color: red;
+	background-color: #c70039;
 }
 
 .green {
-  background-color: green;
+	background-color: limegreen;
 }
 
 .blue {
-  background-color: blue;
+	background-color: dodgerblue;
 }
 
 .yellow {
-  background-color: yellow;
+	background-color: #f4e04d;
 }
 
 .start-btn {
-  background-color: purple;
-  color: #FEF2BF;
-  font-family: 'Press Start 2P', cursive;
-  margin-top: 1rem;
-  border-radius: 20px;
-  padding: 1.25rem 2.5rem;
-  border: solid 5px black;
+	background-color: purple;
+	color: #fef2bf;
+	font-family: 'Press Start 2P', cursive;
+	margin-top: 1rem;
+	border-radius: 20px;
+	padding: 1.25rem 2.5rem;
+	border: solid 5px black;
 }
 
 .start-btn:hover {
-  position: relative;
-  top: 5px;
+	position: relative;
+	top: 5px;
 }
 
 /********************************* GAME STATES *********************************/
 
-
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+	background-color: #c70039;
+	opacity: 0.8;
 }
 
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+	box-shadow: 0 0 20px white;
+	background-color: grey;
 }
 
 .high-score {
-  padding-top: 2rem;
+	padding-top: 2rem;
 }
 
 /********************************* RULES *********************************/
 
 .rules {
-  width: 60%;
-  margin: auto;
+	width: 60%;
+	margin: auto;
 }
 
 .rules-btn {
-  background-color: teal;
-  color: #FEF2BF;
-  font-family: 'Press Start 2P', cursive;
-  margin: 2rem 0 0 0;
-  border-radius: 20px;
-  padding: .5rem 1rem;
-  border: solid 5px black;
+	background-color: teal;
+	color: #fef2bf;
+	font-family: 'Press Start 2P', cursive;
+	margin: 2rem 0 0 0;
+	border-radius: 20px;
+	padding: .5rem 1rem;
+	border: solid 5px black;
 }
 
-.rules-content{
-  text-align: left;
-  margin-left: 15%;
+.rules-content {
+	text-align: left;
+	margin-left: 15%;
 }
 
 /********************************* MEDIA *********************************/
 
-@media (max-width: 1250px){
-  .container {
-    display: block;
-    width: 100%;
-    margin: auto;
-  }
+@media (max-width: 1250px) {
+	.container {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
 
-.btn{
-  height: 300px;
-  width: 300px;
-}
+	.btn {
+		height: 300px;
+		width: 300px;
+	}
 
-  .rules{
-    width: 100%;
-    margin: auto;
-  }
+	.rules {
+		width: 100%;
+		margin: auto;
+	}
 
-  li{
-    margin: 1rem 0 0 0;
-  }
+	li {
+		margin: 1rem 0 0 0;
+	}
 
-  .rules-btn {
-    padding: .75rem 1.5rem;
-  }
+	.rules-btn {
+		padding: 2rem 2rem;
+	}
 
-  .start-btn {
-    padding: 1.5rem 2.25rem;
-    font-size: 1rem;
-  }
+	.start-btn {
+		margin-top: 2.5rem;
+		padding: 2.75rem 3.5rem;
+		font-size: 1rem;
+	}
 }
