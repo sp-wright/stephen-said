@@ -26,9 +26,6 @@ $(".start-btn").click(function() {
   if (level === 0) {
     nextSequence();
   }
-});
-
-$(".start-btn").click(function() {
   $(".start-btn").hide();
 });
 

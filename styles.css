@@ -6,12 +6,8 @@ body {
   color: #FEF2BF;
 }
 
-.heading {
-  font-size: 1.75rem;
-}
-
-#level-title {
-  font-size: 3rem;
+li{
+  margin: 1rem 0 0 0;
 }
 
 .container {
@@ -20,6 +16,30 @@ body {
   margin: auto;
 }
 
+
+/********************************* HEADINGS *********************************/
+
+.main-heading {
+  font-size: 3rem;
+}
+
+.sub-heading {
+  font-size: 1.75rem;
+}
+
+.rules-title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rules-subtitle{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 0 0 2.5rem 0;
+}
+
+/********************************* GAME AREA *********************************/
+
 .btn {
   margin: 25px;
   display: inline-block;
@@ -27,11 +47,6 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
 }
 
 .red {
@@ -50,11 +65,6 @@ body {
   background-color: yellow;
 }
 
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-}
-
 .start-btn {
   background-color: purple;
   color: #FEF2BF;
@@ -70,6 +80,30 @@ body {
   top: 5px;
 }
 
+/********************************* GAME STATES *********************************/
+
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.high-score {
+  padding-top: 2rem;
+}
+
+/********************************* RULES *********************************/
+
+.rules {
+  width: 60%;
+  margin: auto;
+}
+
 .rules-btn {
   background-color: teal;
   color: #FEF2BF;
@@ -80,26 +114,35 @@ body {
   border: solid 5px black;
 }
 
-.rules {
-  width: 60%;
-  margin: auto;
-}
-.rules-subtitle{
-  font-size: 1.5rem;
-  text-decoration: underline;
-  margin: 0 0 2.5rem 0;
-}
-
 .rules-content{
   text-align: left;
   margin-left: 15%;
 }
 
-.rules-title{
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+/********************************* MEDIA *********************************/
 
-.high-score {
-  padding-top: 2rem;
+@media (max-width: 1250px){
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .rules{
+    width: 100%;
+    margin: auto;
+  }
+
+  li{
+    margin: 1rem 0 0 0;
+  }
+
+  .rules-btn {
+    padding: .75rem 1.5rem;
+  }
+
+  .start-btn {
+    padding: 1.5rem 2.25rem;
+    font-size: 1rem;
+  }
 }
