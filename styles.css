@@ -2,12 +2,11 @@ body {
   text-align: center;
   background-color: #011F3F;
   font-family: 'Press Start 2P', cursive;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
-
-.heading{
+.heading {
   font-size: 1.75rem;
 }
 
@@ -19,7 +18,6 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -57,17 +55,51 @@ body {
   background-color: grey;
 }
 
-.start-btn{
+.start-btn {
   background-color: purple;
   color: #FEF2BF;
   font-family: 'Press Start 2P', cursive;
   margin-top: 1rem;
   border-radius: 20px;
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.5rem;
   border: solid 5px black;
 }
 
-.start-btn:hover{
+.start-btn:hover {
   position: relative;
   top: 5px;
+}
+
+.rules-btn {
+  background-color: teal;
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  margin: 2rem 0 0 0;
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  border: solid 5px black;
+}
+
+.rules {
+  width: 60%;
+  margin: auto;
+}
+.rules-subtitle{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 0 0 2.5rem 0;
+}
+
+.rules-content{
+  text-align: left;
+  margin-left: 15%;
+}
+
+.rules-title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.high-score {
+  padding-top: 2rem;
 }

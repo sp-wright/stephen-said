@@ -2,6 +2,7 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
 var level = 0;
+var highScore = 0;
 
 /////////////////////////// SEQUENCE CREATOR
 
@@ -13,19 +14,19 @@ function nextSequence() {
   sounds(randomChosenColor);
   level++;
   $("#level-title").text("Level " + level);
+  if(level>highScore){
+    highScore++;
+  }
+  $(".high-score").text("High Score = " + highScore);
 }
 
 /////////////////////////// USER INPUTS
 
-
-function startGame() {
+$(".start-btn").click(function() {
   if (level === 0) {
     nextSequence();
   }
-}
-
-$(".start-btn").click(startGame);
-$("body").keypress(startGame);
+});
 
 $(".start-btn").click(function() {
   $(".start-btn").hide();
@@ -38,6 +39,15 @@ $(".btn").click(function(event) {
   animatePress(userChosenColor);
   checkAnswer(userClickedPattern.length - 1);
 });
+
+/////////////////////////// RULES
+
+$(".rules").hide();
+
+$(".rules-btn").click(function(){
+  $(".rules").slideToggle();
+});
+
 
 /////////////////////////// VERIFICATION
 
@@ -55,7 +65,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over")
     }, 200);
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over, you reached level "+ level+ "!");
     startOver();
   }
 }
